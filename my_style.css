@@ -1,0 +1,109 @@
+﻿@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+
+body, select {
+    font-size: 18px;
+    font-family: 'cwTeXFangSong', garamond, serif;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+a:hover { /*設定滑鼠移經的連結 */
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+}
+
+.container {
+    margin: 0px auto;
+    /*width: 100%;*/
+    max-width: 600px;
+}
+
+#menuDiv {
+    /*border-top: 1px black solid;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+    border-left: 1px black solid;*/
+    /*border: 1px black solid;*/
+    padding: 0px;
+    text-align: right;
+    background: url(image/my_icon.jpg) 0% / 40px no-repeat #fff;
+}
+
+#contentDiv {
+    /*border: 1px black solid;*/
+}
+
+.post {
+    border-radius: 5px;
+    /*width: 400px;*/
+    /*max-width: 600px;
+    margin: 10px auto;*/
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    border: 1px #ccc solid;
+}
+
+.post_hidden {
+    display: none;
+}
+
+.post_title {
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
+    border-bottom: 1px #ccc solid;
+}
+
+.post_date {
+    font-size: 14px;
+    padding: 10px 0px 0px 0px;
+    border-top: 0px #ccc solid;
+    text-align: right;
+}
+
+
+img {
+    
+}
+img {
+    /*https://zhidao.baidu.com/question/124075225.html*/
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+
+    /*width: 100%;*/
+}
+
+
+/*stackoverflow.com/questions/1895476/how-to-style-a-select-dropdown-with-only-css*/
+
+select {
+    border-radius: 5px;
+    margin: 0px;
+    width: 230px /*250px*/;
+    height: 40px;
+    padding: 0px 0px 0px 10px; /*5px 35px 5px 5px;*/
+    font-size: 20px;
+    border: 1px solid #ccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(image/menu_icon4.png) 96% / 5% no-repeat #fff /*#eee*/; /*www.flaticon.com/free-icon/arrow-down-sign-to-navigate_32195#term=down&page=1&position=11*/
+}
+
+/* CAUTION: IE hackery ahead */
+select::-ms-expand {
+    display: none; /* remove default arrow in IE 10 and 11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select {
+        background: none\9;
+        padding: 5px\9;
+    }
+}
