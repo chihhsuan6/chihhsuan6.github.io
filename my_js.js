@@ -20,6 +20,7 @@ window.onload = function () {
     //Create array of options to be added
     var array = [
         ["public", "最新張貼", "index.html"]
+        , ["public", "Outline", "outline.html"]
         , ["private", "主題 - 週期與定值定額", "value_averaging.html"]
         , ["private", "主題 - 減法生活", "less_is_more.html"]
         , ["private", "主題 - 閱讀", "reading.html"]
