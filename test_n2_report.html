@@ -9,30 +9,35 @@
     
     
     <script>
-        function ShowHello(){
-            // https://stackoverflow.com/questions/12460378/how-to-get-json-from-url-in-javascript/55784549#55784549
-            // https://developers.google.com/web/fundamentals/primers/async-functions?hl=zh-tw
-            // https://www.oxxostudio.tw/articles/201908/js-async-await.html
 
-            async function load() {
-                let url = 'https://dl.dropboxusercontent.com/s/as41kt00ercgvye/N2_Report.txt';
-                let obj = null;
+    //function ShowHello(){
 
-                try {
-                    //obj = await (await fetch(url)).json();
-                    obj = await (await fetch(url)).text()
-                    document.getElementById('ShowBox').innerHTML +=  obj;
-                } catch(e) {
-                    console.log('error');
-                }
+        // https://stackoverflow.com/questions/12460378/how-to-get-json-from-url-in-javascript/55784549#55784549
+        // https://developers.google.com/web/fundamentals/primers/async-functions?hl=zh-tw
+        // https://www.oxxostudio.tw/articles/201908/js-async-await.html
 
-                console.log(obj);
+        async function load() {
+            let url = 'https://dl.dropboxusercontent.com/s/as41kt00ercgvye/N2_Report.txt';
+            let obj = null;
+
+            try {
+                //obj = await (await fetch(url)).json();
+                obj = await (await fetch(url)).text()
+                document.getElementById('ShowBox').innerHTML +=  obj;
+            } catch(e) {
+                console.log('error');
             }
-            load();
+
+            console.log(obj);
         }
+
+    //}
+
+        load();
+
     </script>
 
-    
+
     
 </head>
 <body onload="ShowHello()">
